@@ -1,0 +1,19 @@
+version: 2
+
+models:
+  - name: stg_base_cars
+    description: Set of cars we are reporting for
+    columns:
+      - name: aaaid
+        description:  Car identifier
+        tests:
+          - unique
+          - not_null
+      - name: Country
+        description: Country
+        tests:
+          - not_null
+          - counts:
+              column_name: Country
+              column_value: CZ
+              required_value: 5000
