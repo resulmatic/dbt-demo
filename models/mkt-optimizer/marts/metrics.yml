@@ -1,0 +1,26 @@
+version: 2
+
+models: 
+  - name: fact_car_tech_info
+    
+metrics:
+  - name: profit_avg_dropped_cars
+    label: Average profit on dropped cars
+    description: Metric shows average profit on all cars with price drop
+    model: ref('fact_car_tech_info')
+
+    calculation_method: average
+    expression: SellingProfit
+
+    timestamp: ActualDate
+    time_grains: [day, week, month, quarter, year, all_time]
+
+    dimensions:
+      - Country
+      - Make
+      - FuelType
+
+    filters:
+      - field: Movement
+        operator: '='
+        value: '-1'

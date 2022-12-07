@@ -1,0 +1,12 @@
+version: 2
+
+sources:
+  - name: mkt_optimizer
+    schema: mkt_optimizer
+    tables:
+      - name: ctrl_online_cis_buysource
+      - name: fact_leadsbycar
+      - name: fact_leadsbycar_otherdata
+      - name: fact_pricechanges
+      - name: fact_real_stockstats
+      - name: online_cartracking
