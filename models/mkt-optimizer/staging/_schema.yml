@@ -17,3 +17,11 @@ models:
               column_name: Country
               column_value: CZ
               required_value: 5000
+  - name: stg_dummydata2
+    description: Dummy data for testing incremental load
+    columns:
+      - name: id
+        description: unique id
+        tests:
+          - unique
+          - not_null              
