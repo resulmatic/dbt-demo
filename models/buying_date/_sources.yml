@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: dbt_source_data
+    schema: dbt_source_data
+    tables:
+      - name: raw_hub_hub_navision_central_car_tracking
+      - name: raw_hub_hub_navision_front_office_car_stock_ledger_entry
+      - name: raw_hub_hub_navision_front_office_workflow_log_entry
