@@ -10,3 +10,8 @@ sources:
       - name: fact_pricechanges
       - name: fact_real_stockstats
       - name: online_cartracking
+  - name: dlt_martin_live_dummydata
+    schema: dlt_martin_live_dummydata
+    tables: 
+      - name: dummydata 
+      - name: dummydata1   

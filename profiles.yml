@@ -1,0 +1,11 @@
+default:
+  outputs:
+    dev:
+      catalog: null
+      host: adb-2424546156499339.19.azuredatabricks.net
+      http_path: /sql/1.0/warehouses/16ccb9477c70f84c
+      schema: dbx_job
+      threads: 4
+      token: "{{ env_var('DBT_ACCESS_TOKEN') }}"
+      type: databricks
+  target: dev
